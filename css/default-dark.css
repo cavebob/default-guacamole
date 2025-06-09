@@ -2394,3 +2394,6 @@ input::placeholder, textarea::placeholder{
 .searchicon{
   filter:invert(.75)
 }
+.rc__container{
+	background-color:var(--mantle);
+}

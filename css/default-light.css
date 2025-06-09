@@ -52,7 +52,7 @@
 
     --details-th-text-color:hsl(210, 10%, 42.5%) !important;
     --th-text-color:hsl(210, 10%, 50%) !important;
-    --heading-color:hsl(216, 100%, 50%) !important;
+    --heading-color:hsl(216, 80%, 50%) !important;
 
     --featured:#fff !important;
 
@@ -2393,4 +2393,7 @@ input::placeholder, textarea::placeholder{
 }
 .searchicon{
   filter:invert(.75)
+}
+.rc__container{
+	background-color:var(--mantle);
 }
