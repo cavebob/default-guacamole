@@ -55,6 +55,9 @@
     --heading-color:hsl(216, 100%, 50%) !important;
 
     --featured:#fff !important;
+
+    --small-br:4px;
+    --default-button-padding:3px 7px;
   }
 html{
   background:var(--base);
