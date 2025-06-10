@@ -97,7 +97,7 @@ body{
   margin:0;
   width:440px;
   height:97px;
-  background:url(https://hdbits.org/pic/styles/logo_large.png) no-repeat top left;
+  background:url("https://hdbits.org/pic/styles/logo_large.png") no-repeat top left;
   background-size:470px 97px;
   clear:both
 }
@@ -109,7 +109,7 @@ body{
     margin:0;
     width:352px;
     height:97px;
-    background:url(https://hdbits.org/pic/styles/logo_large_small_display.png) no-repeat top left;
+    background:url("https://hdbits.org/pic/styles/logo_large_small_display.png") no-repeat top left;
     background-size:352px 97px;
     clear:both
   }
@@ -149,7 +149,7 @@ table.readpost .main{
 }
 table.header{
   border:solid;
-  background-image:url("https://hdbits.org//pic/filelist/colhead.gif");
+  background-image:none;
   background-color:var(--crust)
 }
 table.browse{
@@ -574,38 +574,38 @@ img.border{
   margin:0;
   width:150px;
   height:75px;
-  background:url(https://hdbits.org/pic/styles/default/default_avatar.gif) no-repeat top left;
+  background:url("https://hdbits.org/pic/styles/default/default_avatar.gif") no-repeat top left;
   clear:both
 }
 .default_avatar_small{
   margin:0;
   width:75px;
   height:55px;
-  background:url(https://hdbits.org/pic/styles/default/default_avatar_small.gif) no-repeat top left;
+  background:url("https://hdbits.org/pic/styles/default/default_avatar_small.gif") no-repeat top left;
   clear:both
 }
 .unlockednew{
   width:32px;
   height:32px;
-  background:url(https://hdbits.org/pic/filelist/forum/unlockednew.gif) no-repeat center
+  background:url("https://hdbits.org/pic/filelist/forum/unlockednew.gif") no-repeat center
 }
 .unlocked{
   width:32px;
   height:32px;
-  background:url(https://hdbits.org/pic/filelist/forum/unlocked.gif) no-repeat center
+  background:url("https://hdbits.org/pic/filelist/forum/unlocked.gif") no-repeat center
 }
 .lockednew{
   width:32px;
   height:32px;
-  background:url(https://hdbits.org/pic/filelist/forum/lockednew.gif) no-repeat center
+  background:url("https://hdbits.org/pic/filelist/forum/lockednew.gif") no-repeat center
 }
 .locked{
   width:32px;
   height:32px;
-  background:url(https://hdbits.org/pic/filelist/forum/locked.gif) no-repeat center
+  background:url("https://hdbits.org/pic/filelist/forum/locked.gif") no-repeat center
 }
 .hasposted:after{
-  content:url("https://hdbits.org//pic/filelist/forum/hasposted.gif");
+  content:url("https://hdbits.org/pic/filelist/forum/hasposted.gif");
   height:8px;
   left:20px;
   position:relative;
@@ -615,17 +615,17 @@ img.border{
 img.poll{
   padding:0;
   border:0;
-  background-image:url(https://hdbits.org/pic/filelist/bar.gif)
+  background-image:url("https://hdbits.org/pic/filelist/bar.gif")
 }
 img.pollright{
   padding:0;
   border:0;
-  background-image:url(https://hdbits.org/pic/filelist/bar_right.gif)
+  background-image:url("https://hdbits.org/pic/filelist/bar_right.gif")
 }
 img.pollleft{
   padding:0;
   border:0;
-  background-image:url(https://hdbits.org/pic/filelist/bar_left.gif)
+  background-image:url("https://hdbits.org/pic/filelist/bar_left.gif")
 }
 a.catlink:link,
 a.catlink:visited{
@@ -908,7 +908,7 @@ img.imdb{
 .buddylist,
 .mytorrents,
 .searchicon{
-  background-image:url("https://hdbits.org//pic/statusbar_sprite.png") !important;
+  background-image:url("https://hdbits.org/pic/statusbar_sprite.png") !important;
 }
 #donate{
   width:110px;
@@ -923,7 +923,7 @@ img.imdb{
   width:142px;
   height:27px;
   margin:1px 0 0 10px;
-  background-image:url("https://hdbits.org//pic/donate_paypal.png");
+  background-image:url("https://hdbits.org/pic/donate_paypal.png");
   display:inline-block;
   vertical-align:top
 }
@@ -931,7 +931,7 @@ img.imdb{
   width:148px;
   height:29px;
   margin-left:10px;
-  background-image:url("https://hdbits.org//pic/donate_crypto.png");
+  background-image:url("https://hdbits.org/pic/donate_crypto.png");
   display:inline-block;
   vertical-align:top
 }
@@ -1102,7 +1102,7 @@ show-banner-text{
 .tv-torrent-watched,
 .season-watched,
 .torrent-rss-download{
-  background-image:url('/pic/download.gif');
+  background-image:url("https://hdbits.org/pic/download.gif");
   width:16px;
   height:16px;
   margin-top:-4px;
@@ -1113,11 +1113,11 @@ show-banner-text{
 }
 .tv-torrent-watched,
 .season-watched{
-  background-image:url('/pic/accept.png');
+  background-image:url("https://hdbits.org/pic/accept.png");
   margin-left:0
 }
 .torrent-rss-download{
-  background-image:url('/pic/feed_add.png')
+  background-image:url("https://hdbits.org/pic/feed_add.png")
 }
 .season-watched{
   margin-bottom:-1px
@@ -1164,7 +1164,7 @@ show-banner-text{
   padding-right:10px
 }
 #listsback{
-  background:url("https://hdbits.org//pic/backarrow.png") no-repeat scroll left center transparent;
+  background:url("https://hdbits.org/pic/backarrow.png") no-repeat scroll left center transparent;
   font-size:18px;
   height:17px;
   padding:0 0 2px 26px;
@@ -1458,7 +1458,7 @@ table.tablesorter thead{
   cursor:default
 }
 table.tablesorter thead tr .header{
-  background-image:url(https://hdbits.org/pic/sort_updown_white.gif);
+  background-image:url("https://hdbits.org/pic/sort_updown_white.gif");
   background-repeat:no-repeat;
   background-position:center right;
   cursor:pointer
@@ -1474,10 +1474,10 @@ table.tablesorter thead tr .header.acenter{
   padding-right:22px
 }
 table.tablesorter thead tr .headerSortUp{
-  background-image:url(https://hdbits.org/pic/sort_down_white.gif)
+  background-image:url("https://hdbits.org/pic/sort_down_white.gif")
 }
 table.tablesorter thead tr .headerSortDown{
-  background-image:url(https://hdbits.org/pic/sort_up_white.gif)
+  background-image:url("https://hdbits.org/pic/sort_up_white.gif")
 }
 #offersearch{
   width:210px
@@ -1884,7 +1884,7 @@ table.subTable td:nth-child(3){
   display:block;
   width:12px;
   height:12px;
-  background:url("https://hdbits.org//pic/chosen-sprite.png") -42px 1px no-repeat;
+  background:url("https://hdbits.org/pic/chosen-sprite.png") -42px 1px no-repeat;
   font-size:1px
 }
 .chosen-container-single .chosen-single abbr:hover{
@@ -1905,7 +1905,7 @@ table.subTable td:nth-child(3){
   display:block;
   width:100%;
   height:100%;
-  background:url("https://hdbits.org//pic/chosen-sprite.png") no-repeat 0 2px
+  background:url("https://hdbits.org/pic/chosen-sprite.png") no-repeat 0 2px
 }
 .chosen-container-single .chosen-search{
   position:relative;
@@ -1921,7 +1921,7 @@ table.subTable td:nth-child(3){
   height:auto;
   outline:0;
   border:var(--general-border);
-  background:url("https://hdbits.org//pic/chosen-sprite.png") no-repeat 100% -20px;
+  background:url("https://hdbits.org/pic/chosen-sprite.png") no-repeat 100% -20px;
   font-size:1em;
   font-family:sans-serif;
   line-height:normal;
@@ -2048,7 +2048,7 @@ table.subTable td:nth-child(3){
   display:block;
   width:12px;
   height:12px;
-  background:url("https://hdbits.org//pic/chosen-sprite.png") -42px 1px no-repeat;
+  background:url("https://hdbits.org/pic/chosen-sprite.png") -42px 1px no-repeat;
   font-size:1px;
   filter:invert(1)
 }
@@ -2087,8 +2087,7 @@ table.subTable td:nth-child(3){
   border:var(--general-border);
   border-bottom-right-radius:0;
   border-bottom-left-radius:0;
-  background-image:-webkit-gradient(linear, left top, left bottom, color-stop(20%, #eee), color-stop(80%, #fff));
-  background-image:linear-gradient(#eee 20%, #fff 80%);
+  background-image:none;
   -webkit-box-shadow:0 1px 0 #fff inset;
   box-shadow:0 1px 0 #fff inset
 }
@@ -2167,7 +2166,7 @@ table.subTable td:nth-child(3){
 }
 .chosen-rtl .chosen-search input[type="text"]{
   padding:4px 5px 4px 20px;
-  background:url("https://hdbits.org//pic/chosen-sprite.png") no-repeat -30px -20px;
+  background:url("https://hdbits.org/pic/chosen-sprite.png") no-repeat -30px -20px;
   direction:rtl
 }
 .chosen-rtl.chosen-container-single .chosen-single div b{
@@ -2186,7 +2185,7 @@ only screen and (min-resolution:1.5dppx){
   .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
   .chosen-container .chosen-results-scroll-down span,
   .chosen-container .chosen-results-scroll-up span{
-    background-image:url("https://hdbits.org//pic/chosen-sprite.png") !important;
+    background-image:url("https://hdbits.org/pic/chosen-sprite.png") !important;
     background-size:52px 37px !important;
     background-repeat:no-repeat !important
   }
