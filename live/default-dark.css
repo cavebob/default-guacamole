@@ -2390,3 +2390,6 @@ button[disabled="disabled"], button[disabled=""], input[disabled="disabled"], in
   opacity:0.5;
   pointer-events:none;
 }
+input, textarea{
+  max-width:100%;
+}
