@@ -87,31 +87,31 @@ html{
   color:var(--lavender);
 }
 body{
-  font-family:tahoma, arial, helvetica, sans-serif;
-  font-size:11px;
+  margin:0;
   background-color:var(--base);
   color:var(--text);
-  margin:0
+  font-size:11px;
+  font-family:tahoma, arial, helvetica, sans-serif
 }
 #logo{
-  margin:0;
   width:440px;
   height:97px;
+  margin:0;
+  clear:both;
   background:url("https://hdbits.org/pic/styles/logo_large.png") no-repeat top left;
-  background-size:470px 97px;
-  clear:both
+  background-size:470px 97px
 }
 #menusides{
   padding-left:60px
 }
 @media only screen and (max-width :1100px){
   #logo{
-    margin:0;
     width:352px;
     height:97px;
+    margin:0;
+    clear:both;
     background:url("https://hdbits.org/pic/styles/logo_large_small_display.png") no-repeat top left;
-    background-size:352px 97px;
-    clear:both
+    background-size:352px 97px
   }
   #menusides{
     padding-left:10px
@@ -128,7 +128,8 @@ body{
   text-align:center
 }
 img{
-  border:0
+  border:0;
+  max-width:100%;
 }
 table{
   border-collapse:collapse;
@@ -137,8 +138,8 @@ table{
 }
 table.main,
 table.mainouter{
-  background-color:var(--base);
-  padding:2px
+  padding:2px;
+  background-color:var(--base)
 }
 table.readpost,
 tr.highlight{
@@ -178,14 +179,14 @@ table.padding2 th{
   
 }
 .curuser-stats{
-  text-align:right;
+  margin:3px 10px 3px 0;
   line-height:28px;
-  margin:3px 10px 3px 0
+  text-align:right
 }
 .alert-box{
   display:inline-block;
-  padding:0 5px;
   margin-left:10px;
+  padding:0 5px;
   text-decoration:none !important;
   vertical-align:top
 }
@@ -211,19 +212,19 @@ table.padding2 th{
   cursor:pointer
 }
 table.top{
-  background-color:var(--mantle);
-  padding:2px
+  padding:2px;
+  background-color:var(--mantle)
 }
 table.bottom{
-  background:transparent;
-  padding:2px
+  padding:2px;
+  background:transparent
 }
 table.message{
   border:var(--table-border)
 }
 table.invisible{
-  background-color:var(--base);
-  border:2px
+  border:2px;
+  background-color:var(--base)
 }
 .center{
   text-align:center
@@ -247,31 +248,31 @@ h1{
   font-size:21px
 }
 h2{
-  border-style:solid solid none solid;
-  padding-left:5px;
+  margin:5px 0 0 0;
   padding-bottom:1px;
+  padding-left:5px;
   border-width:1px;
+  border-style:solid solid none solid;
   border-color:var(--surface0);
   background-image:none;
-  font-size:13px;
-  margin:5px 0 0 0
+  font-size:13px
 }
 h3{
   font-size:13px
 }
 h3.h3_exclusive{
-  font-size:16px;
   margin:0 0 15px 0;
+  color:var(--peach);
   font-weight:bold;
-  text-align:center;
-  color:var(--peach)
+  font-size:16px;
+  text-align:center
 }
 p.sub{
   margin-bottom:4pt
 }
 p.sig{
-  border-top-style:dotted;
-  margin-bottom:2pt
+  margin-bottom:2pt;
+  border-top-style:dotted
 }
 tr.featured{
   background-color:var(--featured)
@@ -280,29 +281,29 @@ td{
   border:var(--table-border)
 }
 th{
-  font-weight:bold;
-  color:var(--th-text-color);
+  border:var(--table-border);
   background-color:var(--crust);
-  border:var(--table-border)
+  color:var(--th-text-color);
+  font-weight:bold
 }
 th a:link,
 th a:visited{
-  font-weight:bold;
   color:var(--link-color);
+  font-weight:bold;
   text-decoration:none
 }
 th a:hover{
-  font-weight:bold;
   color:var(--link-hover-color);
+  font-weight:bold;
   text-decoration:underline
 }
 td.bottom{
-  border:0;
-  padding:1px
+  padding:1px;
+  border:0
 }
 td.embedded{
-  border:0;
   padding:1px;
+  border:0;
   text-align:left
 }
 td.text{
@@ -341,9 +342,9 @@ td.comment{
   }
 }
 td.colhead{
-  font-weight:bold;
+  background-color:var(--crust);
   color:var(--th-text-color);
-  background-color:var(--crust)
+  font-weight:bold
 }
 td.rowhead,
 td.heading{
@@ -360,55 +361,55 @@ td.title{
   font-size:14pt
 }
 td.navigation{
+  border:0;
   font-weight:bold;
-  font-size:13px;
-  border:0
+  font-size:13px
 }
 .menu a{
   display:block;
   line-height:19px
 }
 td.menunavigation{
+  border-width:1px;
+  border-style:none solid none solid;
+  background:var(--header);
   font-weight:bold;
   font-size:13px;
-  border-style:none solid none solid;
-  border-width:1px;
-  background:var(--header);
 }
 td.menunavigation:hover{
+  border-width:1px;
+  border-style:none solid none solid;
+  background:var(--link-hover-color);
   font-weight:bold;
   font-size:13px;
-  border-style:none solid none solid;
-  border-width:1px;
-  background:var(--link-hover-color);
   & a{
     color:var(--button-primary-text-hover-color)
   }
 }
 td.menunavigation_new{
+  border-width:1px;
+  border-style:none solid none solid;
+  background:var(--crust);
   font-weight:bold;
   font-size:13px;
-  border-style:none solid none solid;
-  border-width:1px;
-  background:var(--crust);
   & a.normal{
     color:var(--link-hover-color);
   }
 }
 td.menunavigation_new:hover{
+  border-width:1px;
+  border-style:none solid none solid;
+  background:var(--link-hover-color);
   font-weight:bold;
   font-size:13px;
-  border-style:none solid none solid;
-  border-width:1px;
-  background:var(--link-hover-color);
   & a{
     color:var(--button-primary-text-hover-color)
   }
 }
 .std-content{
   width:850px;
-  margin-left:auto;
-  margin-right:auto
+  margin-right:auto;
+  margin-left:auto
 }
 td.clear{
   padding:0;
@@ -421,8 +422,8 @@ form{
 }
 .sublink{
   font-style:italic;
-  font-size:7pt;
-  font-weight:normal
+  font-weight:normal;
+  font-size:7pt
 }
 font.gray{
   color:silver;
@@ -430,8 +431,8 @@ font.gray{
 }
 a:link,
 a:visited{
-  text-decoration:underline;
   color:var(--link-color);
+  text-decoration:underline;
 }
 a:hover{
   color:var(--link-hover-color)
@@ -445,8 +446,8 @@ a.biglink{
 }
 a.altlink:link,
 a.altlink:visited{
-  font-weight:bold;
   color:var(--link-color);
+  font-weight:bold;
   text-decoration:none
 }
 a.altlink:hover{
@@ -455,8 +456,8 @@ a.altlink:hover{
 }
 a.altlink_blue:link,
 a.altlink_blue:visited{
-  font-weight:bold;
   color:var(--bookmark-blue);
+  font-weight:bold;
   text-decoration:none
 }
 a.altlink_blue:hover{
@@ -464,8 +465,8 @@ a.altlink_blue:hover{
 }
 a.altlink_green:link,
 a.altlink_green:visited{
-  font-weight:bold;
   color:var(--green);
+  font-weight:bold;
   text-decoration:none
 }
 a.altlink_green:hover{
@@ -473,13 +474,13 @@ a.altlink_green:hover{
 }
 a.altlink_white:link,
 a.altlink_white:visited{
-  font-weight:bold;
   color:var(--link-color);
+  font-weight:bold;
   text-decoration:none
 }
 a.altlink_white:hover{
-  font-weight:bold;
   color:var(--link-hover-color);
+  font-weight:bold;
   text-decoration:underline
 }
 a.normal:link,
@@ -510,12 +511,12 @@ input,
 select,
 textarea,
 button{
-  font-family:tahoma, arial, helvetica, sans-serif;
-  font-size:11px;
-  background:var(--input-bg);
-  border:var(--button-secondary-border);
   padding:var(--default-button-padding);
+  border:var(--button-secondary-border);
   border-radius:2px;
+  background:var(--input-bg);
+  font-size:11px;
+  font-family:tahoma, arial, helvetica, sans-serif;
 }
 select{
   color:var(--input-text-color) !important;
@@ -531,19 +532,19 @@ select{
   font-size:13px
 }
 .spoiler{
-  background-color:var(--crust);
-  color:var(--crust);
+  display:inline-block;
   min-width:70px;
-  display:inline-block
+  background-color:var(--crust);
+  color:var(--crust)
 }
 .spoiler *{
   visibility:hidden
 }
 .spoiler:before{
-  content:"** spoiler **";
   position:absolute;
-  color:var(--text);
-  padding-left:3px
+  padding-left:3px;
+  content:"** spoiler **";
+  color:var(--text)
 }
 .spoiler:hover{
   background-color:transparent;
@@ -561,28 +562,28 @@ li{
   margin-left:5px
 }
 ul{
-  margin-left:16pt;
   margin-top:0;
-  margin-bottom:0
+  margin-bottom:0;
+  margin-left:16pt
 }
 img.border{
+  border-width:0;
   border-style:solid;
-  border-color:var(--text);
-  border-width:0
+  border-color:var(--text)
 }
 .default_avatar{
-  margin:0;
   width:150px;
   height:75px;
-  background:url("https://hdbits.org/pic/styles/default/default_avatar.gif") no-repeat top left;
-  clear:both
+  margin:0;
+  clear:both;
+  background:url("https://hdbits.org/pic/styles/default/default_avatar.gif") no-repeat top left
 }
 .default_avatar_small{
-  margin:0;
   width:75px;
   height:55px;
-  background:url("https://hdbits.org/pic/styles/default/default_avatar_small.gif") no-repeat top left;
-  clear:both
+  margin:0;
+  clear:both;
+  background:url("https://hdbits.org/pic/styles/default/default_avatar_small.gif") no-repeat top left
 }
 .unlockednew{
   width:32px;
@@ -605,12 +606,12 @@ img.border{
   background:url("https://hdbits.org/pic/filelist/forum/locked.gif") no-repeat center
 }
 .hasposted:after{
-  content:url("https://hdbits.org/pic/filelist/forum/hasposted.gif");
-  height:8px;
-  left:20px;
   position:relative;
   top:20px;
-  width:8px
+  left:20px;
+  width:8px;
+  height:8px;
+  content:url("https://hdbits.org/pic/filelist/forum/hasposted.gif")
 }
 img.poll{
   padding:0;
@@ -638,14 +639,14 @@ a.catlink:hover{
   font-weight:bold
 }
 .backgroundspace{
-  background-color:var(--mantle);
-  border:0
+  border:0;
+  background-color:var(--mantle)
 }
 .popup{
-  border:var(--general-border);
   position:absolute;
-  background-color:var(--mantle);
   padding:5px;
+  border:var(--general-border);
+  background-color:var(--mantle);
   font-weight:bold
 }
 .previewbox{
@@ -655,27 +656,27 @@ a.catlink:hover{
   padding:2px
 }
 #rendererbutton{
-  padding:5px 10px;
-  margin-top:10px
+  margin-top:10px;
+  padding:5px 10px
 }
 .minicon{
-  border:0;
   margin-top:3px;
   margin-bottom:-3px;
+  border:0;
   cursor:pointer
 }
 .genres{
-  color:var(--subtext0);
-  padding-left:10px
+  padding-left:10px;
+  color:var(--subtext0)
 }
 .genres a{
-  text-decoration:none;
   color:var(--link-color);
+  text-decoration:none;
   filter:brightness(.8);
 }
 .genres a:hover{
-  text-decoration:underline;
   color:var(--link-hover-color);
+  text-decoration:underline;
 }
 .contentlayout{
   width:100%
@@ -699,9 +700,9 @@ a.catlink:hover{
   padding-right:1px
 }
 #subcell div{
-  float:left;
   margin-right:3px;
-  margin-bottom:3px
+  margin-bottom:3px;
+  float:left
 }
 #subcell img{
   display:block;
@@ -709,9 +710,9 @@ a.catlink:hover{
 }
 #subcell span{
   display:block;
-  float:left;
+  margin-top:3px;
   margin-left:3px;
-  margin-top:3px
+  float:left
 }
 #subcell span.one{
   width:32px
@@ -733,16 +734,16 @@ a.catlink:hover{
 }
 #imdbinfo img,
 img.imdb{
-  border:0;
   margin-bottom:-2px;
-  margin-left:5px
+  margin-left:5px;
+  border:0
 }
 .content th{
-  font-weight:bold;
-  color:var(--th-text-color);
-  background-color:transparent;
   padding:4px 10px 4px 0;
   border:0;
+  background-color:transparent;
+  color:var(--th-text-color);
+  font-weight:bold;
   vertical-align:top
 }
 .content td{
@@ -764,12 +765,12 @@ img.imdb{
   vertical-align:bottom
 }
 .collapsable{
-  cursor:pointer;
-  padding-bottom:0 !important
+  padding-bottom:0 !important;
+  cursor:pointer
 }
 .label{
-  font-weight:bold;
   padding-bottom:5px;
+  font-weight:bold;
   user-select:none;
 }
 .plusminus{
@@ -784,17 +785,17 @@ img.imdb{
   border:var(--table-border)
 }
 #torrent-list button{
-  float:right;
   display:block;
+  position:relative;
   margin-top:-0.6em;
   margin-bottom:0;
-  position:relative
+  float:right
 }
 #torrent-list button.tvdb_button{
   display:none;
-  margin-bottom:-0.6em;
   margin-top:0;
-  margin-right:4px
+  margin-right:4px;
+  margin-bottom:-0.6em
 }
 #torrent-list td{
   padding:4px
@@ -813,8 +814,8 @@ img.imdb{
   border-left-style:none
 }
 .pagerel:hover{
-  cursor:pointer;
   color:var(--link-hover-color);
+  cursor:pointer;
 }
 .pagerarrowhidden{
   color:var(--base)
@@ -828,29 +829,29 @@ img.imdb{
 }
 #showbannertext{
   display:inline-block;
-  vertical-align:middle;
+  width:785px;
+  padding-left:50px;
   font-size:36px;
   text-align:center;
   text-decoration:none;
-  width:785px;
-  padding-left:50px
+  vertical-align:middle
 }
 .showlinks{
   display:inline-block;
-  vertical-align:middle;
   margin:0 2px 0 0;
-  padding:0
+  padding:0;
+  vertical-align:middle
 }
 #showbannertext + .showlinks{
   margin-top:0 !important
 }
 .showlinks li{
-  list-style-type:none;
-  margin-left:8px
+  margin-left:8px;
+  list-style-type:none
 }
 #showpage{
-  background-color:transparent;
   width:930px;
+  background-color:transparent;
   text-align:left
 }
 #showpage .contentcontent{
@@ -865,21 +866,21 @@ img.imdb{
   margin:0
 }
 .showseasons li{
-  list-style:none;
-  margin:0
+  margin:0;
+  list-style:none
 }
 .showseasons h2{
   cursor:pointer
 }
 .showseasons h3{
-  cursor:pointer;
+  margin:0;
   padding:4px;
-  margin:0
+  cursor:pointer
 }
 .showseasons img{
-  border:0;
+  margin-top:4px;
   margin-bottom:-4px;
-  margin-top:4px
+  border:0
 }
 .showseasons .notorrents > h3{
   color:gray
@@ -888,15 +889,15 @@ img.imdb{
   color:gray
 }
 .search_relevent{
+  display:table;
   margin-top:10px;
   font-weight:bold;
-  font-size:13px;
-  display:table
+  font-size:13px
 }
 .searchgenres > label{
   display:inline-block;
-  text-align:left;
-  width:63px
+  width:63px;
+  text-align:left
 }
 #donate,
 .donor,
@@ -911,46 +912,46 @@ img.imdb{
   background-image:url("https://hdbits.org/pic/statusbar_sprite.png") !important;
 }
 #donate{
+  display:block;
   width:110px;
   height:23px;
-  background-position:0 24px;
-  display:block;
-  margin-left:10px;
   margin-top:5px;
-  float:left
+  margin-left:10px;
+  float:left;
+  background-position:0 24px
 }
 #donate_paypal{
+  display:inline-block;
   width:142px;
   height:27px;
   margin:1px 0 0 10px;
   background-image:url("https://hdbits.org/pic/donate_paypal.png");
-  display:inline-block;
   vertical-align:top
 }
 #donate_bitcoin{
+  display:inline-block;
   width:148px;
   height:29px;
   margin-left:10px;
   background-image:url("https://hdbits.org/pic/donate_crypto.png");
-  display:inline-block;
   vertical-align:top
 }
 .donor{
+  display:inline-block;
   width:11px;
   height:10px;
-  display:inline-block;
   background-position:-22px -2px
 }
 .seeding{
+  display:inline-block;
   width:5px;
   height:8px;
-  display:inline-block;
   background-position:-1px -90px
 }
 .leeching{
+  display:inline-block;
   width:5px;
   height:8px;
-  display:inline-block;
   background-position:-1px -74px
 }
 .sentbox,
@@ -958,9 +959,9 @@ img.imdb{
 .inboxnew,
 .buddylist,
 .mytorrents{
+  display:inline-block;
   width:16px;
   height:14px;
-  display:inline-block;
   margin-bottom:-2px
 }
 .sentbox{
@@ -989,26 +990,26 @@ img.imdb{
   max-width:800px
 }
 #tabs{
-  list-style-type:none;
   margin:0;
+  margin-bottom:10px;
   padding:4px;
-  margin-bottom:10px
+  list-style-type:none
 }
 #tabs > .tab{
-  background-color:var(--mantle);
-  border:var(--table-border);
-  color:var(--text);
   display:inline-block;
-  font-size:16px;
-  font-weight:bold;
-  margin:0 2px;
   min-width:100px;
+  margin:0 2px;
+  border:var(--table-border);
+  background-color:var(--mantle);
+  color:var(--text);
+  font-weight:bold;
+  font-size:16px;
   cursor:pointer
 }
 .tab > a{
-  text-decoration:none;
   display:block;
-  padding:2px 17px
+  padding:2px 17px;
+  text-decoration:none
 }
 .tab.selected{
   background-color:var(--button-primary-bg) !important;
@@ -1020,10 +1021,10 @@ img.imdb{
 }
 #tv-show-list{
   width:520px;
-  float:left;
   max-height:644px;
-  overflow-y:scroll;
-  overflow-x:hidden
+  float:left;
+  overflow-x:hidden;
+  overflow-y:scroll
 }
 .show-header{
   position:relative;
@@ -1032,15 +1033,15 @@ img.imdb{
 .overlay{
   position:absolute;
   top:0;
+  right:0;
   bottom:0;
-  left:0;
-  right:0
+  left:0
 }
 .overlay-popupui > .button{
   visibility:hidden;
+  margin:2px 2px;
   float:right;
   clear:both;
-  margin:2px 2px;
   background-color:var(--base)
 }
 .overlay-popupui:hover > .button{
@@ -1048,39 +1049,39 @@ img.imdb{
 }
 .show-banner,
 show-banner-text{
-  width:500px;
-  display:block
-}
-.show-banner-text{
-  font-size:20px;
-  font-weight:bold;
-  line-height:92px;
-  background-color:var(--crust);
+  display:block;
   width:500px
 }
-.show-title{
+.show-banner-text{
+  width:500px;
   background-color:var(--crust);
+  font-weight:bold;
+  font-size:20px;
+  line-height:92px
+}
+.show-title{
   padding:10px;
-  font-size:18px;
-  font-weight:bold
+  background-color:var(--crust);
+  font-weight:bold;
+  font-size:18px
 }
 #tv-episode-list{
   min-width:400px;
+  margin-left:15px;
   float:left;
   background-color:var(--mantle);
-  text-align:left;
-  margin-left:15px
+  text-align:left
 }
 .show-preference{
   padding:5px 10px;
-  font-size:12px;
-  border-top:var(--table-border)
+  border-top:var(--table-border);
+  font-size:12px
 }
 .season-title{
-  background-color:var(--crust);
   padding:5px 10px;
-  font-size:16px;
-  border-top:var(--table-border)
+  border-top:var(--table-border);
+  background-color:var(--crust);
+  font-size:16px
 }
 .season-packs{
   margin:5px 0
@@ -1092,8 +1093,8 @@ show-banner-text{
   margin:5px 0
 }
 .episode-title{
-  font-size:11px;
   font-weight:bold;
+  font-size:11px;
 }
 .tv-torrent{
   padding:2px 10px
@@ -1102,19 +1103,19 @@ show-banner-text{
 .tv-torrent-watched,
 .season-watched,
 .torrent-rss-download{
-  background-image:url("https://hdbits.org/pic/download.gif");
+  display:inline-block;
   width:16px;
   height:16px;
   margin-top:-4px;
   margin-bottom:-4px;
-  display:inline-block;
   margin-left:2px;
+  background-image:url("https://hdbits.org/pic/download.gif");
   cursor:pointer
 }
 .tv-torrent-watched,
 .season-watched{
-  background-image:url("https://hdbits.org/pic/accept.png");
-  margin-left:0
+  margin-left:0;
+  background-image:url("https://hdbits.org/pic/accept.png")
 }
 .torrent-rss-download{
   background-image:url("https://hdbits.org/pic/feed_add.png")
@@ -1123,21 +1124,21 @@ show-banner-text{
   margin-bottom:-1px
 }
 #searchselector{
-  padding:0;
-  margin:0
+  margin:0;
+  padding:0
 }
 #searchselector > li{
   display:inline-block;
-  font-size:11px;
   padding:0 3px;
+  font-size:11px;
   cursor:pointer
 }
 #searchselector > li.selected{
   font-weight:bold
 }
 #sitesearchform{
-  width:260px;
-  position:relative
+  position:relative;
+  width:260px
 }
 #sitesearchinput{
   box-sizing:border-box;
@@ -1145,39 +1146,39 @@ show-banner-text{
 }
 #sitesearchsubmit{
   position:absolute;
-  right:4px;
   top:4px;
+  right:4px;
   border:0;
-  cursor:pointer;
-  background-color:transparent
+  background-color:transparent;
+  cursor:pointer
 }
 .button{
   padding:.1em .5em;
-  border-radius:2px;
   border:var(--table-border);
+  border-radius:2px;
   text-decoration:none !important;
   cursor:pointer
 }
 .button2{
-  cursor:pointer;
+  padding-right:10px;
   padding-left:10px;
-  padding-right:10px
+  cursor:pointer
 }
 #listsback{
-  background:url("https://hdbits.org/pic/backarrow.png") no-repeat scroll left center transparent;
-  font-size:18px;
   height:17px;
   padding:0 0 2px 26px;
-  font-weight:bold
+  background:url("https://hdbits.org/pic/backarrow.png") no-repeat scroll left center transparent;
+  font-weight:bold;
+  font-size:18px
 }
 .grid{
   width:100%;
   overflow:auto
 }
 .grid__50{
+  display:block;
   width:50%;
-  float:left;
-  display:block
+  float:left
 }
 .list-overview{
   display:block;
@@ -1214,31 +1215,31 @@ a.half_fl:link{
   color:#060
 }
 .tag-content{
+  display:inline-block;
   position:relative;
+  max-width:100%;
   margin:3px 3px 3px 0;
   padding:4px 6px 4px 6px;
   border:var(--general-border);
-  max-width:100%;
   border-radius:3px;
   background-color:var(--crust);
   box-shadow:0 0 2px var(--base) inset, 0 1px 0 var(--mantle);
   color:var(--button-secondary-text-color) !important;
+  font-size:120%;
   line-height:13px;
-  cursor:default;
-  display:inline-block;
-  font-size:120%
+  cursor:default
 }
 .tag-content a{
-  text-decoration:none;
-  color:var(--button-secondary-text-color) !important
+  color:var(--button-secondary-text-color) !important;
+  text-decoration:none
 }
 .tag{
-  text-transform:uppercase;
-  font-size:10px;
-  margin-left:5px;
-  color:var(--text);
-  padding:0 4px;
   display:inline-block;
+  margin-left:5px;
+  padding:0 4px;
+  color:var(--text);
+  font-size:10px;
+  text-transform:uppercase;
   cursor:default
 }
 .tag.new{
@@ -1289,8 +1290,8 @@ a > .tag{
   background-color:var(--link-color);
 }
 .submenu-highlight__link{
-  text-decoration:none !important;
-  color:var(--button-primary-text-color) !important
+  color:var(--button-primary-text-color) !important;
+  text-decoration:none !important
 }
 .js-hidden{
   display:none
@@ -1298,18 +1299,18 @@ a > .tag{
 .notification-overlay{
   position:absolute;
   top:0;
-  bottom:0;
   right:0;
+  bottom:0;
   left:0
 }
 .notification-frame{
-  background-color:var(--mantle);
-  border-color:var(--surface0);
-  border-style:solid;
-  border-width:0 1px 1px;
+  width:600px;
   margin:auto;
   padding:5px 10px;
-  width:600px
+  border-width:0 1px 1px;
+  border-style:solid;
+  border-color:var(--surface0);
+  background-color:var(--mantle)
 }
 .notification{
   margin:5px 0
@@ -1319,10 +1320,10 @@ a > .tag{
 }
 .notification__body{
   display:inline-block;
-  padding:5px;
   max-width:545px;
-  cursor:pointer;
-  text-decoration:none !important
+  padding:5px;
+  text-decoration:none !important;
+  cursor:pointer
 }
 .notification__body:hover{
   text-decoration:underline !important
@@ -1334,8 +1335,8 @@ a > .tag{
   text-decoration:none !important
 }
 .notification__delete{
-  float:right;
   padding:5px;
+  float:right;
   text-decoration:underline;
   cursor:pointer
 }
@@ -1376,35 +1377,35 @@ table.lottery_table2 td.heading{
   vertical-align:middle
 }
 div.lottery_fin_div1{
-  width:20%;
   display:inline-block;
+  width:20%;
   height:30px;
-  line-height:30px;
+  margin:0 0 15px 0;
   font-weight:bold;
   font-size:13px;
-  margin:0 0 15px 0
+  line-height:30px
 }
 div.lottery_fin_div2{
-  width:60%;
   display:inline-block;
-  text-align:center;
+  width:60%;
   height:30px;
-  line-height:30px;
+  margin:0 0 15px 0;
   font-weight:bold;
   font-size:13px;
-  margin:0 0 15px 0
+  line-height:30px;
+  text-align:center
 }
 div.lottery_fin_div3{
-  line-height:20px;
+  margin:0 0 15px 0;
   font-weight:bold;
   font-size:13px;
-  margin:0 0 15px 0
+  line-height:20px
 }
 div.lottery_fin_div4{
   display:block;
+  margin:0 0 15px 0;
   font-weight:bold;
-  font-size:13px;
-  margin:0 0 15px 0
+  font-size:13px
 }
 select.lottery_select{
   width:120px
@@ -1431,15 +1432,15 @@ a.red_link:hover{
 }
 label.label_showhide{
   display:inline-block;
-  cursor:pointer;
   margin:3px 0 3px 0;
+  font-weight:bold;
   font-size:12px;
-  font-weight:bold
+  cursor:pointer
 }
 label.label_showhide span{
   color:var(--lavender);
-  font-size:11px;
-  font-weight:normal
+  font-weight:normal;
+  font-size:11px
 }
 label.label_showhide,
 label.label_showhide span{
@@ -1451,16 +1452,16 @@ div.div_showhide{
 }
 div.div_showhide > div{
   display:inline-block;
-  border:1px dashed var(--surface1);
-  padding:6px 6px 6px 7px
+  padding:6px 6px 6px 7px;
+  border:1px dashed var(--surface1)
 }
 table.tablesorter thead{
   cursor:default
 }
 table.tablesorter thead tr .header{
   background-image:url("https://hdbits.org/pic/sort_updown_white.gif");
-  background-repeat:no-repeat;
   background-position:center right;
+  background-repeat:no-repeat;
   cursor:pointer
 }
 table.tablesorter thead tr .header.aleft{
@@ -1470,8 +1471,8 @@ table.tablesorter thead tr .header.aleft2{
   padding-right:18px
 }
 table.tablesorter thead tr .header.acenter{
-  padding-left:22px;
-  padding-right:22px
+  padding-right:22px;
+  padding-left:22px
 }
 table.tablesorter thead tr .headerSortUp{
   background-image:url("https://hdbits.org/pic/sort_down_white.gif")
@@ -1483,12 +1484,12 @@ table.tablesorter thead tr .headerSortDown{
   width:210px
 }
 .invite_notice{
-  font-weight:bold;
-  color:var(--red);
-  background-color:var(--mantle);
   width:624px;
+  padding:10px 7px 10px 7px;
   border:var(--table-border);
-  padding:10px 7px 10px 7px
+  background-color:var(--mantle);
+  color:var(--red);
+  font-weight:bold
 }
 table.sources_table{
   margin:0 auto;
@@ -1522,32 +1523,32 @@ td.nopad{
 }
 .noselect{
   -webkit-touch-callout:none;
-  user-select:none;
-  cursor:default
+  cursor:default;
+  user-select:none
 }
 .float_button_right{
-  float:right;
-  margin-top:-8px
+  margin-top:-8px;
+  float:right
 }
 .float_button_right2{
-  float:right;
-  margin-top:-2px
+  margin-top:-2px;
+  float:right
 }
 .center_comments > table.main{
   margin:0 auto
 }
 .autocomplete-suggestions{
+  min-width:228px;
+  overflow:auto;
   border:var(--table-border);
   background:var(--input-bg);
-  cursor:default;
-  overflow:auto;
   box-shadow:1px 4px 3px rgba(50, 50, 50, 0.64);
-  min-width:228px
+  cursor:default
 }
 .autocomplete-suggestion{
   padding:2px 5px;
-  white-space:nowrap;
-  overflow:hidden
+  overflow:hidden;
+  white-space:nowrap
 }
 .autocomplete-selected{
   background:var(--button-secondary-hover-bg);
@@ -1562,31 +1563,31 @@ td.nopad{
   position:relative
 }
 .browse_td_name_cell .browse_imdb_poster{
+  display:none;
+  z-index:100;
   position:absolute;
   top:-125px;
-  left:-277px;
   right:auto;
-  z-index:100;
-  display:none
+  left:-277px
 }
 @media screen and (max-width:1500px){
   .browse_td_name_cell .browse_imdb_poster{
-    left:auto;
-    right:-191px
+    right:-191px;
+    left:auto
   }
 }
 .browse_td_name_cell .browse_imdb_poster img{
   width:190px;
   height:auto;
-  border:0;
-  margin:0
+  margin:0;
+  border:0
 }
 div.spackPhase{
   width:900px
 }
 div.spackPhase > h2{
-  text-align:left;
-  padding:2px 6px
+  padding:2px 6px;
+  text-align:left
 }
 table#episodeSearch,
 table#doxList,
@@ -1598,21 +1599,21 @@ table.subTable#doxList2{
 }
 div.infoBox{
   width:900px;
-  background-color:var(--mantle);
+  margin-bottom:8px;
   border:var(--table-border);
-  margin-bottom:8px
+  background-color:var(--mantle)
 }
 div.controlSection{
-  text-align:left;
-  border:var(--table-border);
   margin-bottom:8px;
-  background-color:var(--mantle)
+  border:var(--table-border);
+  background-color:var(--mantle);
+  text-align:left
 }
 div.controlSection h2{
   margin:0 0 4px 0;
+  padding:2px 6px;
   border:0;
-  border-bottom:var(--table-border);
-  padding:2px 6px
+  border-bottom:var(--table-border)
 }
 div.controlSection div{
   margin:6px
@@ -1626,8 +1627,8 @@ div.controlSection label{
 }
 div.controlSection input,
 div.controlSection select{
-  padding:3px 6px;
-  margin-right:8px
+  margin-right:8px;
+  padding:3px 6px
 }
 div.controlSection button{
   margin-right:8px;
@@ -1638,11 +1639,11 @@ div#historyBlock > label{
   float:left
 }
 div#historyBlock > section{
-  float:left;
   display:block;
+  width:410px;
   max-height:120px;
-  overflow:auto;
-  width:410px
+  float:left;
+  overflow:auto
 }
 div#historyBlock > section > p{
   display:block;
@@ -1660,10 +1661,10 @@ div#historyBlock > section > p:hover{
   background-color:var(--mantle)
 }
 #spackSelectionWarning{
+  padding:.5em;
   color:var(--red);
   font-weight:bold;
-  font-size:1.5em;
-  padding:.5em
+  font-size:1.5em
 }
 table#doxList > tbody > tr > td{
   vertical-align:top
@@ -1685,41 +1686,41 @@ table.subTable td:nth-child(3){
   margin-left:20px
 }
 .donated_wrapper{
+  box-sizing:border-box;
+  display:inline-block;
+  position:relative;
   width:262px;
   height:29px;
   margin-right:5px;
-  display:inline-block;
-  vertical-align:top;
-  position:relative;
-  box-sizing:border-box
+  vertical-align:top
 }
 .donated_wrapper .donated_text{
   position:absolute;
-  width:80px;
-  height:29px;
-  line-height:14px;
   top:0;
   left:0;
+  width:80px;
+  height:29px;
   font-weight:bold;
   font-size:12px;
+  line-height:14px;
   text-align:center
 }
 .donated_wrapper .donated_rectangle{
+  box-sizing:border-box;
   position:absolute;
-  width:182px;
-  height:29px;
   top:0;
   left:80px;
-  border:2px solid var(--surface0);
-  box-sizing:border-box
+  width:182px;
+  height:29px;
+  border:2px solid var(--surface0)
 }
 .donated_wrapper .donated_rectangle .donated_filled{
+  box-sizing:border-box;
   position:absolute;
-  width:0;
-  height:25px;
   top:0;
   left:0;
-  box-sizing:border-box
+  width:0;
+  height:25px
 }
 .donated_wrapper .donated_rectangle.donated_color100,
 .donated_wrapper .donated_rectangle.donated_color90,
@@ -1759,20 +1760,20 @@ table.subTable td:nth-child(3){
   background-color:var(--green-seeding)
 }
 .donated_wrapper .donated_rectangle .donated_number{
-  width:178px;
-  height:25px;
   position:absolute;
   top:0;
   left:0;
-  line-height:24px;
+  width:178px;
+  height:25px;
   color:black;
   font-weight:bold;
   font-size:12px;
+  line-height:24px;
   text-align:center
 }
 .chosen-container{
-  position:relative;
   display:inline-block;
+  position:relative;
   vertical-align:middle;
   user-select:none
 }
@@ -1780,9 +1781,9 @@ table.subTable td:nth-child(3){
   box-sizing:border-box
 }
 .chosen-container .chosen-drop{
+  z-index:1010;
   position:absolute;
   top:100%;
-  z-index:1010;
   width:100%;
   border:var(--general-border);
   border-top:0;
@@ -1802,40 +1803,40 @@ table.subTable td:nth-child(3){
 .chosen-container .chosen-single .group-name{
   margin-right:4px;
   overflow:hidden;
-  white-space:nowrap;
-  text-overflow:ellipsis;
+  color:#999;
   font-weight:normal;
-  color:#999
+  text-overflow:ellipsis;
+  white-space:nowrap
 }
 .chosen-container .search-choice .group-name:after,
 .chosen-container .chosen-single .group-name:after{
-  content:":";
   padding-left:2px;
+  content:":";
   vertical-align:top
 }
 .chosen-container-single .chosen-single{
-  position:relative;
   display:block;
-  overflow:hidden;
-  padding:0 0 0 8px;
+  position:relative;
   height:25px;
+  padding:0 0 0 8px;
+  overflow:hidden;
   border:var(--general-border);
   border-radius:5px;
-  background-color:var(--input-bg);
   background-clip:padding-box;
+  background-color:var(--input-bg);
   box-shadow:0 0 3px #443768 inset, 0 1px 1px rgba(0, 0, 0, 0.1);
   color:#444;
+  line-height:24px;
   text-decoration:none;
-  white-space:nowrap;
-  line-height:24px
+  white-space:nowrap
 }
 .chosen-container-single .chosen-default{
   color:var(--input-text-color)
 }
 .chosen-container-single .chosen-single span{
   display:block;
-  overflow:hidden;
   margin-right:26px;
+  overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap
 }
@@ -1843,10 +1844,10 @@ table.subTable td:nth-child(3){
   margin-right:38px
 }
 .chosen-container-single .chosen-single abbr{
+  display:block;
   position:absolute;
   top:6px;
   right:26px;
-  display:block;
   width:12px;
   height:12px;
   background:url("https://hdbits.org/pic/chosen-sprite.png") -42px 1px no-repeat;
@@ -1859,10 +1860,10 @@ table.subTable td:nth-child(3){
   background-position:-42px -10px
 }
 .chosen-container-single .chosen-single div{
+  display:block;
   position:absolute;
   top:0;
   right:0;
-  display:block;
   width:18px;
   height:100%
 }
@@ -1873,24 +1874,24 @@ table.subTable td:nth-child(3){
   background:url("https://hdbits.org/pic/chosen-sprite.png") no-repeat 0 2px
 }
 .chosen-container-single .chosen-search{
-  position:relative;
   z-index:1010;
+  position:relative;
   margin:0;
   padding:3px 4px;
   white-space:nowrap
 }
 .chosen-container-single .chosen-search input[type="text"]{
-  margin:1px 0;
-  padding:4px 20px 4px 5px;
   width:100%;
   height:auto;
-  outline:0;
+  margin:1px 0;
+  padding:4px 20px 4px 5px;
   border:var(--general-border);
+  border-radius:0;
+  outline:0;
   background:url("https://hdbits.org/pic/chosen-sprite.png") no-repeat 100% -20px;
   font-size:1em;
-  font-family:sans-serif;
   line-height:normal;
-  border-radius:0
+  font-family:sans-serif
 }
 .chosen-container-single .chosen-drop{
   margin-top:-1px;
@@ -1903,21 +1904,21 @@ table.subTable td:nth-child(3){
   clip-path:inset(100% 100%)
 }
 .chosen-container .chosen-results{
-  color:var(--input-text-color);
   position:relative;
-  overflow-x:hidden;
-  overflow-y:auto;
+  max-height:240px;
   margin:0 4px 4px 0;
   padding:0 0 0 4px;
-  max-height:240px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  color:var(--input-text-color);
   -webkit-overflow-scrolling:touch
 }
 .chosen-container .chosen-results li{
   display:none;
   margin:0;
   padding:5px 6px;
-  list-style:none;
   line-height:15px;
+  list-style:none;
   word-wrap:break-word;
   -webkit-touch-callout:none
 }
@@ -1935,9 +1936,9 @@ table.subTable td:nth-child(3){
   color:var(--button-secondary-text-hover-color)
 }
 .chosen-container .chosen-results li.no-results{
-  color:var(--text-muted-color);
   display:list-item;
-  background:var(--mantle)
+  background:var(--mantle);
+  color:var(--text-muted-color)
 }
 .chosen-container .chosen-results li.group-result{
   display:list-item;
@@ -1953,11 +1954,11 @@ table.subTable td:nth-child(3){
 }
 .chosen-container-multi .chosen-choices{
   position:relative;
-  overflow:hidden;
-  margin:0;
-  padding:0 5px;
   width:100%;
   height:auto;
+  margin:0;
+  padding:0 5px;
+  overflow:hidden;
   border:var(--general-border);
   background-color:var(--input-bg);
   cursor:text
@@ -1972,31 +1973,31 @@ table.subTable td:nth-child(3){
   white-space:nowrap
 }
 .chosen-container-multi .chosen-choices li.search-field input[type="text"]{
+  width:25px;
+  height:25px;
   margin:1px 0;
   padding:0;
-  height:25px;
-  outline:0;
   border:0 !important;
+  border-radius:0;
+  outline:0;
   background:transparent !important;
   box-shadow:none;
   color:var(--input-placeholder-text-color);
   font-size:100%;
-  font-family:sans-serif;
   line-height:normal;
-  border-radius:0;
-  width:25px
+  font-family:sans-serif
 }
 .chosen-container-multi .chosen-choices li.search-choice{
   position:relative;
+  max-width:100%;
   margin:3px 5px 3px 0;
   padding:3px 20px 3px 5px;
   border:var(--general-border);
-  max-width:100%;
   border-radius:3px;
-  background-color:var(--crust);
   background-size:100% 19px;
   background-repeat:repeat-x;
   background-clip:padding-box;
+  background-color:var(--crust);
   box-shadow:0 0 2px #2e2d3f inset, 0 1px 0 rgba(0, 0, 0, 0.05);
   color:var(--text);
   cursor:default
@@ -2005,10 +2006,10 @@ table.subTable td:nth-child(3){
   word-wrap:break-word
 }
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close{
+  display:block;
   position:absolute;
   top:4px;
   right:3px;
-  display:block;
   width:12px;
   height:12px;
   background:url("https://hdbits.org/pic/chosen-sprite.png") -42px 1px no-repeat;
@@ -2021,8 +2022,8 @@ table.subTable td:nth-child(3){
 .chosen-container-multi .chosen-choices li.search-choice-disabled{
   padding-right:5px;
   border:var(--general-border);
-  background-color:var(--mantle);
   background-image:linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+  background-color:var(--mantle);
   color:var(--text-muted-color)
 }
 .chosen-container-multi .chosen-choices li.search-choice-focus{
@@ -2066,8 +2067,8 @@ table.subTable td:nth-child(3){
   color:#222 !important
 }
 .chosen-disabled{
-  opacity:.5 !important;
-  cursor:default
+  cursor:default;
+  opacity:.5 !important
 }
 .chosen-disabled .chosen-single{
   cursor:default
@@ -2079,8 +2080,8 @@ table.subTable td:nth-child(3){
   text-align:right
 }
 .chosen-rtl .chosen-single{
-  overflow:visible;
-  padding:0 8px 0 0
+  padding:0 8px 0 0;
+  overflow:visible
 }
 .chosen-rtl .chosen-single span{
   margin-right:0;
@@ -2183,6 +2184,7 @@ hr{
   color:var(--mauve);
 }
 [style="color: blue"],
+[style*="color: blue;"],
 [style="color: #0000ff"]{
   color:var(--bookmark-blue) !important;
 }
@@ -2191,10 +2193,12 @@ hr{
   color:var(--text) !important;
 }
 [style="color: yellow"],
+[style="color: yellow;"]
 [style="color: #ffff00"]{
   color:var(--yellow) !important;
 }
 [style="color: orange"],
+[style="color: orange;"],
 [style="color: #ffa500"]{
   color:var(--peach) !important;
 }
@@ -2203,6 +2207,7 @@ hr{
   color:var(--pink) !important;
 }
 [style="color: green"],
+[style="color: green;"]
 [style="color: #008000"]{
   color:var(--green) !important;
 }
@@ -2211,6 +2216,7 @@ hr{
   color:var(--teal) !important;
 }
 [style="color: red"],
+[style*="color: red;"],
 [style="color: #ff0000"],
 [style="color: #ee0000"],
 [style="color: #dd0000"]{
@@ -2222,7 +2228,8 @@ hr{
 [style="color: maroon"]{
   color:var(--maroon) !important;
 }
-[style="color: purple"], [style="color: Purple"],
+[style="color: purple"],
+[style="color: Purple"],
 [style="color: #800080"]{
   color:var(--mauve) !important;
 }
@@ -2292,9 +2299,9 @@ div.statposter_views{
 	background-color:var(--mantle);
 }
 #showpage{
-  background:var(--mantle);
   padding:10px;
   border:var(--table-border);
+  background:var(--mantle);
   & h2:has(+ul[style="display: none;"]){
     border-style:solid;
   }
@@ -2357,4 +2364,26 @@ input::placeholder, textarea::placeholder{
 }
 div.rc__container{
   background-color:var(--mantle);
+}
+.spackPhase .lottery_table2{
+  overflow:clip;
+  & tr:hover td{
+    background:var(--crust) !important;
+  }
+  & tr.selected td{
+    background:var(--crust) !important;
+  }
+}
+.spackPhase :is(.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate){
+	color:var(--subtext0);
+}
+.spackPhase .lottery_table2.dataTable.display tr:is(.selected,:hover){ 
+  background:inherit;
+}
+.infoBox.red h3{
+  color:var(--red);
+}
+button[disabled="disabled"], button[disabled=""], input[disabled="disabled"], input[disabled=""]{
+  opacity:0.5;
+  pointer-events:none;
 }

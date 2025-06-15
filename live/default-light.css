@@ -158,7 +158,8 @@ body{
   text-align:center
 }
 img{
-  border:0
+  border:0;
+  max-width:100%;
 }
 table{
   border-collapse:collapse;
@@ -2213,6 +2214,7 @@ hr{
   color:var(--mauve);
 }
 [style="color: blue"],
+[style*="color: blue;"],
 [style="color: #0000ff"]{
   color:var(--bookmark-blue) !important;
 }
@@ -2221,10 +2223,12 @@ hr{
   color:var(--text) !important;
 }
 [style="color: yellow"],
+[style="color: yellow;"]
 [style="color: #ffff00"]{
   color:var(--yellow) !important;
 }
 [style="color: orange"],
+[style="color: orange;"],
 [style="color: #ffa500"]{
   color:var(--peach) !important;
 }
@@ -2233,6 +2237,7 @@ hr{
   color:var(--pink) !important;
 }
 [style="color: green"],
+[style="color: green;"]
 [style="color: #008000"]{
   color:var(--green) !important;
 }
@@ -2241,6 +2246,7 @@ hr{
   color:var(--teal) !important;
 }
 [style="color: red"],
+[style*="color: red;"],
 [style="color: #ff0000"],
 [style="color: #ee0000"],
 [style="color: #dd0000"]{
@@ -2252,7 +2258,8 @@ hr{
 [style="color: maroon"]{
   color:var(--maroon) !important;
 }
-[style="color: purple"], [style="color: Purple"],
+[style="color: purple"],
+[style="color: Purple"],
 [style="color: #800080"]{
   color:var(--mauve) !important;
 }
@@ -2387,4 +2394,26 @@ input::placeholder, textarea::placeholder{
 }
 div.rc__container{
   background-color:var(--mantle);
+}
+.spackPhase .lottery_table2{
+  overflow:clip;
+  & tr:hover td{
+    background:var(--crust) !important;
+  }
+  & tr.selected td{
+    background:var(--crust) !important;
+  }
+}
+.spackPhase :is(.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate){
+	color:var(--subtext0);
+}
+.spackPhase .lottery_table2.dataTable.display tr:is(.selected,:hover){ 
+  background:inherit;
+}
+.infoBox.red h3{
+  color:var(--red);
+}
+button[disabled="disabled"], button[disabled=""], input[disabled="disabled"], input[disabled=""]{
+  opacity:0.5;
+  pointer-events:none;
 }
