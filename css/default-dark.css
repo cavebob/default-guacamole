@@ -2365,6 +2365,9 @@ input::placeholder, textarea::placeholder{
 div.rc__container{
   background-color:var(--mantle);
 }
+#spackFind .lottery_table2 td{
+  background:var(--mantle);
+}
 .spackPhase .lottery_table2{
   overflow:clip;
   & tr:hover td{
